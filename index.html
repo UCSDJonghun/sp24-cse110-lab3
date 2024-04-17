@@ -36,23 +36,78 @@
         <section id="pictures">
             <h3><u>Meeting Pictrues</u></h3>
             <figure>
-                <img src ="
+                <img src ="https://github.com/UCSDJonghun/Lab2_Starter/blob/main/Image/ji%20son.jpeg" width="500" height"300">
             </figure>
-        
-        <section>
-            
-          </section>
-
-        <section>
-            <h2>Additional Attendees</h2>
-            <ul>
-                <li>[Name]</li>
-                <li>[Major/Position]</li>
-                <li>[College/Organization]</li>
-                <li>[Contact Info]</li>
-            </ul>
         </section>
-    </main>
+        <hr>
+        <section id="Video">
+            <h3><u>Meeting Video</u></h3>
+            <video width="500" height="300" controls>
+                <scource src =">
+                    </video>
+                    </section>
+
+        <hr>
+    <form>
+        <fieldset>
+            <legend>Feedback Form</legend>
+    
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+    
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+    
+            <div>
+                <label for="fav_lang">Favorite Programming Language:</label>
+                <input list="languages" id="fav_lang" name="fav_lang">
+                <datalist id="languages">
+                    <option value="Python">
+                    <option value="JavaScript">
+                    <option value="Java">
+                    <option value="C++">
+                    <option value="Ruby">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="college">UCSD College:</label>
+                <select id="college" name="college">
+                    <option value="Revelle">Revelle</option>
+                    <option value="Muir">Muir</option>
+                    <option value="Marshall">Marshall</option>
+                    <option value="Warren">Warren</option>
+                    <option value="Roosevelt">Roosevelt</option>
+                    <option value="Sixth">Sixth</option>
+                    <option value="Seventh">Seventh</option>
+                    <option value="Eighth">Eighth</option>
+                </select>
+            </div>
+    
+            <div>
+                <p>Preferred Editor:</p>
+                <input type="radio" id="vscode" name="editor" value="vscode">
+                <label for="vscode">VS Code</label><br>
+                <input type="radio" id="sublime" name="editor" value="sublime">
+                <label for="sublime">Sublime Text</label><br>
+                <input type="radio" id="atom" name="editor" value="atom">
+                <label for="atom">Atom</label>
+            </div>
+    
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+    
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
 
     <footer>
         <p>&copy; 2024</p>
