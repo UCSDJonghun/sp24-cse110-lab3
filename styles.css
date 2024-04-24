@@ -1,54 +1,134 @@
-main header {
-    text-align: center;
+form {
+    & input{
+        background-color: lightblue;
+    }
 }
 
-/* Headers */
-header h1 {
-    font-size: 2em;
-    margin: 0;
+li.absent {
+    color: darkred;
 }
 
-header h2, header h3 {
-    margin: 0;
-    font-size: 1.5em;
+p + span {
+    font-weight: lighter;
 }
 
-header h3 {
-    font-size: 1.2em;
+select ~ option {
+    color:grey;
 }
 
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
+div p {
+    color: rgb(248, 94, 120);
 }
 
-nav li {
-    margin-bottom: 10px;
+ol > li {
+    font-weight: bolder;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
+* {
+    background-color: rgba(231, 182, 133, 0.877);
+}
+
+#id {
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+li[class="italics"] {
+    font-style: italic;
+}
+
+.mediaElement {
+    display:grid;
+    grid-template-columns: 900px;
+    grid-row: auto;
+    row-gap: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-color: brown;
+    border-style: solid;
+
+}
+
+h1, h2 {
     font-weight: bold;
 }
 
-/* Sections */
-section {
-    margin-bottom: 20px;
+h1 {
+    color: rgb(187, 17, 116); /* red */
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
 }
 
-hr {
-    margin: 20px 0;
+h2 {
+    --heading-color: #0D9B3C;
+    color: var(--heading-color, green); /* green */
+    margin-left: 0.5cm;
+    position: static;
 }
 
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
+h3:has(+ p) {
+    margin-bottom:0.5rem;
 }
 
-/* Videos and Audio */
-video, audio {
-    width: 100%;
+h3 {
+    color: hsl(219, 68%, 49%); /* blue */
+    margin-left: 15mm;
+}
+
+h3:hover {
+    color: white;
+}
+
+h3:active {
+    color: grey;
+}
+
+ol {
+    display: block;
+    margin:auto;
+    padding: 5px 2px 5px 2px;
+    border-style: solid;
+    border-color: color-mix(in srgb, #34c9eb 40%, white);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1em;
+    border-right-width: 1em;
+    border-radius: 2px;
+}
+
+ul {
+    display: inline-block;
+    border-style: solid;
+    border-color: color(rec2020 0.6 0.1 1 / 0.4);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1vh 10vw 1vh 1vw;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    align-self: center;
+    gap: 10px;
+}
+
+@media only screen and (min-width: 200px) {
+    form {
+        max-width: 1920px;
+        min-width: 200px;
+    }
+}
+audio {
+    height: 60px;
+    width: 300px;
 }
