@@ -1,4 +1,4 @@
-### Standup Meeting Notes
+# Standup Meeting Notes
 
 ## Meeting Details
-# Date: YYYY-MM-DD
+### Date: YYYY-MM-DD
