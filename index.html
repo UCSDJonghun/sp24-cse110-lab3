@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes</title>
+    <meta name="description" content="Meeting Minutes for CSE 110 Lab 2">
+    <meta name="author" content="Jonghun Lee">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Meeting Minutes</h1>
+            <h2>Topic : Intro</h2>
+            <h3>April 14, 2024</h3>
+        </header>
+    </main>
+    <hr>
+    <section>
+        <nav>
+            <ul>
+                <li><h4><a href="#attendance">Attendance</a></h4></li>
+                <li><h4><a href="#pictures">Meeting Pictures</a></h4></li>
+                <li><h4><a href="#video">Meeting Video</a></h4></li>
+            </ul>
+        </nav>
+    </section>
+    <hr>
+    <section id="attendance">
+        <h3><u>Attendance</u></h3>
+        <h4>Present Members</h4>
+        <ul>
+            <li>Jonghun Lee</li>
+            <li>Heung min son</li>
+            <li>Ji sung Park</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="pictures">
+    <h2>Meeting Pictures</h2>
+    <img src="https://github.com/UCSDJonghun/Lab2_Starter/blob/main/Image/ji%20son.png" alt="Team Picture">
+</section>
+    
+    <hr>
+    <section id="video">
+    <h3><u>Meeting Video</u></h3>
+    <video controls>
+        <source src="https://github.com/UCSDJonghun/Lab2_Starter/blob/main/Image/GX010887.MP4" type="video/mp4">
+    </video>
+</section>
+    <hr>
+    <section id="audio">
+        <h3><u>Meeting Audio</u></h3>
+        <audio controls>
+            <source src="https://github.com/UCSDJonghun/Lab2_Starter/blob/main/Image/(Audio)%20video1965917474.m4a" type="audio/mpeg">
+        </audio>
+    </section>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Feedback Form</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div>
+                <label for="fav_lang">Favorite Programming Language:</label>
+                <input list="languages" id="fav_lang" name="fav_lang">
+                <datalist id="languages">
+                    <option value="Python">
+                    <option value="JavaScript">
+                    <option value="Java">
+                    <option value="C++">
+                    <option value="Ruby">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="college">UCSD College:</label>
+                <select id="college" name="college">
+                    <option value="Revelle">Revelle</option>
+                    <option value="Muir">Muir</option>
+                    <option value="Marshall">Marshall</option>
+                    <option value="Warren">Warren</option>
+                    <option value="Roosevelt">Roosevelt</option>
+                    <option value="Sixth">Sixth</option>
+                    <option value="Seventh">Seventh</option>
+                    <option value="Eighth">Eighth</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Preferred Editor:</p>
+                <input type="radio" id="vscode" name="editor" value="vscode">
+                <label for="vscode">VS Code</label><br>
+                <input type="radio" id="sublime" name="editor" value="sublime">
+                <label for="sublime">Sublime Text</label><br>
+                <input type="radio" id="atom" name="editor" value="atom">
+                <label for="atom">Atom</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>
