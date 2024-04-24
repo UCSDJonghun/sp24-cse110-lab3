@@ -1,101 +1,83 @@
-/* Theme Colors */
-:root {
-    --main-bg-color: #f4f4f9;
-    --accent-color: #007bff;
-    --text-color: #333333;
-    --section-line-color: #cccccc;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    color: var(--text-color);
-    background-color: var(--main-bg-color);
-    margin: 0;
-    padding: 20px;
-    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
 }
 
-/* Headings styles */
+/* Header styles */
 h1, h2, h3, h4 {
-    color: var(--accent-color);
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 0.25em;
+    font-size: 24px;
+    color: #2a4b8d;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    font-size: 20px;
+    color: #2a4b8d;
 }
 
-h3, h4 {
-    font-size: 1.5em;
-    margin-top: 0;
+h3 {
+    font-size: 18px;
+    color: #444;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
 }
 
-/* Decorative lines to separate sections */
-section {
-    border-top: 2px solid var(--section-line-color);
-    padding: 15px;
+h4 {
+    font-size: 16px;
+    color: #555;
     margin-top: 20px;
 }
 
-/* list and link styles */
-ul, ol {
+/* List styles */
+ul {
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 li {
-    padding-bottom: 0.5em;
+    margin-bottom: 5px;
 }
 
-a {
-    color: var(--accent-color);
-    text-decoration: none;
+/* Section styles */
+section {
+    margin-bottom: 30px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* form elements */
-input[type="text"], textarea {
+/* Table styles (if you choose to use a table) */
+table {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+/* Action items */
+.action-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Additional notes */
+.notes {
+    margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* subtle inset shadow for depth */
-}
-
-input[type="submit"] {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* design adjustments */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    body {
-        padding: 10px;
-    }
+    background-color: #f9f9f9;
 }
