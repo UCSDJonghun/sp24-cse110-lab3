@@ -1,134 +1,181 @@
-form {
-    & input{
-        background-color: lightblue;
-    }
-}
+/* This is a comment */
 
-li.absent {
-    color: darkred;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-p + span {
-    font-weight: lighter;
-}
-
-select ~ option {
-    color:grey;
-}
-
-div p {
-    color: rgb(248, 94, 120);
-}
-
-ol > li {
-    font-weight: bolder;
-}
-
-* {
-    background-color: rgba(231, 182, 133, 0.877);
-}
-
-#id {
-    font-family: "Jersey 10", sans-serif;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-li[class="italics"] {
-    font-style: italic;
-}
-
-.mediaElement {
-    display:grid;
-    grid-template-columns: 900px;
-    grid-row: auto;
-    row-gap: 20px;
-}
-
-footer {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    border-color: brown;
-    border-style: solid;
-
-}
-
-h1, h2 {
-    font-weight: bold;
+body {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    color: rgb(187, 17, 116); /* red */
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    left: 50%;
+  color: hsl(34, 100%, 50%);
 }
 
 h2 {
-    --heading-color: #0D9B3C;
-    color: var(--heading-color, green); /* green */
-    margin-left: 0.5cm;
-    position: static;
-}
-
-h3:has(+ p) {
-    margin-bottom:0.5rem;
+  color: orangered;
 }
 
 h3 {
-    color: hsl(219, 68%, 49%); /* blue */
-    margin-left: 15mm;
+  color:  color(display-p3, 0, 1, 0);
 }
 
-h3:hover {
-    color: white;
+p {
+  color: color-mix(in srgb, red 50%, blue 50%);
+  text-align: center;
+  text-decoration: underline;
 }
 
-h3:active {
-    color: grey;
+:root {
+  --main-color: #778899;
 }
 
-ol {
-    display: block;
-    margin:auto;
-    padding: 5px 2px 5px 2px;
-    border-style: solid;
-    border-color: color-mix(in srgb, #34c9eb 40%, white);
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1em;
-    border-right-width: 1em;
-    border-radius: 2px;
+b {
+  color: var(--main-color, blue);
 }
 
-ul {
-    display: inline-block;
-    border-style: solid;
-    border-color: color(rec2020 0.6 0.1 1 / 0.4);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 1vh 10vw 1vh 1vw;
+strong {
+  color: var(--undefined-color, #ffcc00);
 }
 
-form {
-    display: flex;
-    align-items: flex-start;
-    align-self: center;
-    gap: 10px;
+/* Relative units */
+i {
+  font-size: 2em;
+  width: 75vw;
+  margin-top: 5%;
 }
 
-@media only screen and (min-width: 200px) {
-    form {
-        max-width: 1920px;
-        min-width: 200px;
-    }
+/* Absolute units */
+header {
+  width: 500px;
+  margin-top: 20pt;
+  border: 5mm solid black;
+  margin: auto
 }
-audio {
-    height: 60px;
-    width: 300px;
+
+.boxone {
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+  border: 5px solid blue;
+  display: inline-block;
+  position: sticky;
+  top: 20px;
+}
+
+.boxtwo {
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  
+  border-style: solid;
+  border-color: green;
+  border-width: 5px;
+  border-radius: 10px;
+
+  display: block;
+  position: static;
+}
+
+.sizing {
+  max-width: 100%;
+  height: 50%;
+  min-width: 50%;
+}
+
+button:hover {
+  color: red
+}
+
+a:active {
+  color: green
+}
+
+.flex-container {
+  display: flex;
+  background: lightgray;
+  justify-content: space-around; /* Distributes space around items */
+  align-items: center; /* Vertically align items in the center */
+  height: 200px;
+}
+
+.flex-item {
+  background: navy;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background: lightgray;
+  padding: 10px;
+}
+
+.grid-item {
+  background: lightblue;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
+#meeting-topic {
+  background-color: #FFFF99;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  background-color: #e7acac;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+}
+
+section ul > li:hover {
+  text-decoration: underline;
+}
+
+h2 ~ span {
+  color: grey;
+}
+
+h2 + details {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button.primary {
+  background-color: lightblue;
+}
+
+h2:has(+ p) {
+  background-color: blue;
+}
+
+nav li:hover > a {
+  color: yellow;
 }
